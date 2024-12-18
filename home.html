@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="images/style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <header class="top-nav">
+      <nav>
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+            <circle cx="200" cy="200" r="140" fill="#6f42c1" />
+            <path
+              d="M140 200 L180 200 M220 200 L260 200 M200 140 L200 180 M200 220 L200 260"
+              stroke="white"
+              stroke-width="16"
+              fill="none"
+            />
+            <circle
+              cx="200"
+              cy="200"
+              r="100"
+              stroke="white"
+              stroke-width="16"
+              fill="none"
+            />
+            <text
+              x="400"
+              y="180"
+              font-family="Arial Black, sans-serif"
+              font-size="120"
+              fill="#6f42c1"
+              font-weight="bold"
+            >
+              AMAN
+            </text>
+            <text
+              x="400"
+              y="300"
+              font-family="Arial, sans-serif"
+              font-size="90"
+              fill="#64748b"
+            >
+              STORE
+            </text>
+            <line
+              x1="400"
+              y1="330"
+              x2="800"
+              y2="330"
+              stroke="#6f42c1"
+              stroke-width="12"
+            />
+          </svg>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for products..." />
+          <button>Search</button>
+        </div>
+
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="cart.html">Products</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="about_us.html" class="active">About Us</a>
+          <a href="#" class="cart-section">
+            <span class="cart-icon">🛒</span>
+            <span>0 item(s) - EGP0</span>
+          </a>
+        </div>
+
+      
+      </nav>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-trigger" onclick="toggleMenu()">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div >
+        
+          
+            <h1 style="max-height: 20px;  justify-content:center ; display:grid ;" >
+        All Departments
+
+            </h1>
+
+     
+     
+      </div>
+      <div class="departments-menu">
+        <a href="#" class="menu-item">
+          <span>PC Components</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>AHW Builds</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Computer Peripherals</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Laptop</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Playstation</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Storage Devices</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Gaming Chairs</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Accessories</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Network</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>AHW Services</span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>Open Box</span>
+        </a>
+        <a href="#" class="menu-item">
+          <span>3D Printed</span>
+        </a>
+      </div>
+    </div>
+    <marquee behavior="slide" direction="left" scrollamount="100">
+
+        <div class="categories-container">
+            <div class="categories">
+              <div class="category">
+                <div class="category-image">
+                  <img src="images/mn.png" alt="Monitor with Red Dragon Logo" />
+                </div>
+                <div class="category-title">MONITORS</div>
+              </div>
+      
+              <div class="category">
+                <div class="category-image">
+                  <img src="images/gf.png" alt="Graphics card" />
+                </div>
+                <div class="category-title">GRAPHICS<br />CARD</div>
+              </div>
+      
+              <div class="category">
+                <div class="category-image">
+                  <img src="images/char.png" alt="Gaming Chair" />
+                </div>
+                <div class="category-title">GAMING CHAIR</div>
+              </div>
+      
+              <div class="category">
+                <div class="category-image">
+                  <img src="images/sd.png" alt="Storage Device" />
+                </div>
+                <div class="category-title">STORAGE<br />DEVICES</div>
+              </div>
+      
+              <div class="category">
+                <div class="category-image">
+                  <!-- هنعمل صورة هنا -->
+                  <img src="images/cabl.png" alt="Services" />
+                </div>
+                <div class="category-title">CABLES & CONNECTORS</div>
+              </div>
+      
+              <div class="category">
+                <div class="category-image">
+                  <img src="images/ac.png" alt="Accessories" />
+                </div>
+                <div class="category-title">ACCESSORIES</div>
+              </div>
+      
+      
+              <div class="category">
+                <div class="category-image">
+                  <img src="images/raw.png" alt="Network" />
+                </div>
+                <div class="category-title">NETWORK</div>
+              </div>
+            </div>
+          </div>
+    </marquee>
+   
+    <section>
+      <div class="section-title">Monitors</div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="product-card">
+            <img src="images/515AZDsBFXL._AC_SX679_.jpg" alt="p1 " />
+            <div class="product-info">
+              <h3>Lenovo G25-20 24.5 Inch FHD TN 165Hz</h3>
+              <div class="price">EGP 9,602</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/p2.png" alt="p2" />
+            <div class="product-info">
+              <h3>MSI PRO MP251 Monitor 24.5 IPS</h3>
+              <div class="price">EGP 5,769</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/p3.png" alt="p3" />
+            <div class="product-info">
+              <h3>BenQ GW2485TC 23.8 inch FHD</h3>
+              <div class="price">EGP 10,299</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/p4.png" alt="p4" />
+            <div class="product-info">
+              <h3>MSI G255F 24.5" 180Hz 1ms Fast IPS</h3>
+              <div class="price">EGP 9,112</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title">GRAPHICS CARD</div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="product-card">
+            <img src="images/g1.png" alt="منتج 1" />
+            <div class="product-info">
+              <h3>ASUS DUAL-RX7800XT-O16G AMD RADEON RX 7800 XT 16GB GDDR6 256bit 2520Mhz OC HDMI 3xDP Graphics
+            </h3>
+              <div class="price">EGP 9,602</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/g2.png" alt="p 2" />
+            <div class="product-info">
+              <h3>MSI GeForce GT 730 Fermi DDR3 4GB DirectX 12 (N730-4GD3V2)
+            </h3>
+              <div class="price">EGP 5,769</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/g3.png" alt="p3" style="width: 150px;" />
+            <div class="product-info">
+              <h3>Arktek NVIDIA GeForce GTX 750 TI 4GB GDDR5 128-Bit HDMI/DVI/VGA Graphics Card </h3>
+              <div class="price">EGP 10,299</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/g4.png" alt="p4"  />
+            <div class="product-info">
+              <h3>MSI G255F 24.5" 180Hz 1ms Fast IPS</h3>
+              <div class="price">EGP 9,112</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title">Gaming Chairs</div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="product-card">
+            <img src="images/o1.png" alt="o 1" />
+            <div class="product-info">
+              <h3>Game Chairs with Headrest and Lumbar Support, Rocking Mode (Black-Red)</h3>
+              <div class="price">EGP 9,602</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/o2.png" alt="o 2" />
+            <div class="product-info">
+              <h3>HOMCOM Vinsetto Gaming Chair </h3>
+              <div class="price">EGP 5,769</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/o3.png" alt="o 3" />
+            <div class="product-info">
+              <h3>Quattro Manager Medical Office Chair - Black Mesh</h3>
+              <div class="price">EGP 10,299</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/o4.png" alt="o 4" />
+            <div class="product-info">
+              <h3>Video Game Chairs Height Adjustable Seat with Headrest for Office or Bedroom, Study Room,Chair, Black, zq-2098</h3>
+              <div class="price">EGP 9,112</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title">STORAGE DEVICES</div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="product-card">
+            <img src="images/a1.png" alt="A 1" />
+            <div class="product-info">
+              <h3>Cache SATA III Internal Desktop Hard Drive Blue
+            </h3>
+              <div class="price">EGP 9,602</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/a2.png" alt="A 2" />
+            <div class="product-info">
+              <h3>2TB Internal HDD SATA 3.5"Hard Drive Legacy Windows 10 Pro Installed Used</h3>
+              <div class="price">EGP 5,769</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/a3.png" alt="a 3" />
+            <div class="product-info">
+              <h3>Seagate Skyhawk AI 18TB Video Internal Hard Drive HDD â€“ 3.5 Inch SATA 6Gb/s 256MB</h3>
+              <div class="price">EGP 10,299</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/a4.png" alt="a 4" />
+            <div class="product-info">
+              <h3>HD 4TB SATA 7.2K 3.5" without caddy</h3>
+              <div class="price">EGP 9,112</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title">CABLES & CONNECTORS</div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="product-card">
+            <img src="images/C1.png" alt="C 1" />
+            <div class="product-info">
+              <h3>Lenovo G25-20 24.5 Inch FHD TN 165Hz</h3>
+              <div class="price">EGP 53.5</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/c2.png" alt="c 2" />
+            <div class="product-info">
+              <h3>HDMI 4K High Speed HDTV 20m Premium Cable
+            </h3>
+              <div class="price">EGP 769</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/c3.png" alt="c3 " />
+            <div class="product-info">
+              <h3>Exon X1053 displayport to display port male dp 4k cable original resolutions 1080p /2k/ 4k 1.8meters - black
+            </h3>
+              <div class="price">EGP 299</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/c4.png" alt="c 4" />
+            <div class="product-info">
+              <h3>UGREEN CAT8 Shielded Round Braided Cable Modular Plugs 2m
+            </h3>
+              <div class="price">EGP 112</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title">ACCESSORIES</div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="product-card">
+            <img src="images/w1.png" alt="w 1" />
+            <div class="product-info">
+              <h3>HyperX Cloud II Gaming Headset for PC & PS4 & Xbox One, Nintendo Switch, Red, Wired, One Size Headphones Headset
+            </h3>
+              <div class="price">EGP 5,602</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/w2.png" alt="w 2" />
+            <div class="product-info">
+              <h3>ASUS RA04 TUF GAMING K1/AR
+            </h3>
+              <div class="price">EGP 2,769</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/w3.png" alt="w 3" />
+            <div class="product-info">
+              <h3>COUGAR-EGY (T29) PS4 Dualshock wired Controller for PC/Play-Station 4/Pro/Slim Windows 10/8 Vibration Wired Controller For PS4 (PS5 Model) – Red
+            </h3>
+              <div class="price">EGP 250</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/w4.png" alt="w 4" />
+            <div class="product-info">
+              <h3>Aula S20 3200 Dpi LED Macro Gaming Mouse
+            </h3>
+              <div class="price">EGP 112</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-title">Networks</div>
+
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="product-card">
+            <img src="images/n1.png" alt="n 1" />
+            <div class="product-info">
+              <h3>Archer C6 AC1200 Dual Band Access Point/ Wireless Gigabit Router, black, ARCHER C6, Windows
+            </h3>
+              <div class="price">EGP 3,602</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/n2.png" alt="n 2" />
+            <div class="product-info">
+              <h3>TP-Link TL-MR6400 Unlocked 300 Mbps Wireless N 4G LTE Router
+            </h3>
+              <div class="price">EGP 2,769</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/n3.png" alt="n 3" />
+            <div class="product-info">
+              <h3>Tenda / AC6 V5 / AC1200 Smart Dual-band Router
+            </h3>
+              <div class="price">EGP 3,299</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/n4.png" alt="n 4" />
+            <div class="product-info">
+              <h3>Tplink ARCHER AX10 AX1500 WiFi 6 Router
+            </h3>
+              <div class="price">EGP 1,112</div>
+              <a href="#" class="btn">🛒 Add to Cart</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+      <footer>
+        <p>&copy; 2024 Aman Store. All Rights Reserved.</p>
+    </footer>
+    
+  </body>
+</html>

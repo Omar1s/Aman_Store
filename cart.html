@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Your Cart | Aman Store</title>
+    <link rel="stylesheet" href="cart.css">
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome for icons -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTTXabCk7a8fsos5E91XfYyFGk69eNk+7fH2JHgCqNkpMTeRaNkiMWj2pJUPicZ8+KzJz8p9EA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+    
+
+   
+</head>
+<body>
+  
+    <header class="top-nav">
+        <nav>
+          <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+              <circle cx="200" cy="200" r="140" fill="#6f42c1" />
+              <path
+                d="M140 200 L180 200 M220 200 L260 200 M200 140 L200 180 M200 220 L200 260"
+                stroke="white"
+                stroke-width="16"
+                fill="none"
+              />
+              <circle
+                cx="200"
+                cy="200"
+                r="100"
+                stroke="white"
+                stroke-width="16"
+                fill="none"
+              />
+              <text
+                x="400"
+                y="180"
+                font-family="Arial Black, sans-serif"
+                font-size="120"
+                fill="#6f42c1"
+                font-weight="bold"
+              >
+                AMAN
+              </text>
+              <text
+                x="400"
+                y="300"
+                font-family="Arial, sans-serif"
+                font-size="90"
+                fill="#64748b"
+              >
+                STORE
+              </text>
+              <line
+                x1="400"
+                y1="330"
+                x2="800"
+                y2="330"
+                stroke="#6f42c1"
+                stroke-width="12"
+              />
+            </svg>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for products..." />
+            <button>Search</button>
+          </div>
+  
+          <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="cart.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about_us.html" class="active">About Us</a>
+          </div>
+  
+          <a href="#" class="cart-section">
+            <span class="cart-icon">🛒</span>
+            <span>0 item(s) - EGP0</span>
+          </a>
+        </nav>
+      </header>
+    
+    <section class="hero">
+        <div class="overlay">
+            <h1>Your Cart</h1>
+            <p>Review and manage your selected products.</p>
+        </div>
+    </section>
+    
+
+    <main class="content">
+        <section class="cart-section">
+            <h2>Selected Items</h2>
+            
+            <!-- Cart Header Row -->
+            <div class="cart-header-row">
+                <div>Product</div>
+                <div>Name</div>
+                <div>Price</div>
+                <div>Quantity</div>
+                <div>Remove</div>
+            </div>
+            
+            <!-- Cart Items -->
+            <div class="cart-items-container">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/515AZDsBFXL._AC_SX679_.jpg" alt="p1 " />
+                    </div>
+                    <div class="cart-item-name">Lenovo G25-20 24.5 Inch FHD TN 165Hz</div>
+                    <div class="cart-item-price">EGP 9.602</div>
+                    <div class="cart-item-quantity">
+                        <div class="quantity-control">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" min="1" value="1">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-remove">
+                        <form class="remove-form"  method="post">
+                            <input type="hidden" name="item_id" value="1">
+                            <button class="remove-btn" type="submit">Remove</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/g2.png" alt="p 2" />
+                    </div>
+                    <div class="cart-item-name">MSI GeForce GT 730 Fermi DDR3 4GB DirectX 12 (N730-4GD3V2)</div>
+                    <div class="cart-item-price">EGP 5.769</div>
+                    <div class="cart-item-quantity">
+                        <div class="quantity-control">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" min="1" value="2">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-remove">
+                        <form class="remove-form" action="remove_item.php" method="post">
+                            <input type="hidden" name="item_id" value="2">
+                            <button class="remove-btn" type="submit">Remove</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/o1.png" alt="o 1" />
+                    </div>
+                    <div class="cart-item-name">Game Chairs with Headrest and Lumbar Support, Rocking Mode (Black-Red)</div>
+                    <div class="cart-item-price">EGP 9.602</div>
+                    <div class="cart-item-quantity">
+                        <div class="quantity-control">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" min="1" value="3">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-remove">
+                        <form class="remove-form" action="remove_item.php" method="post">
+                            <input type="hidden" name="item_id" value="3">
+                            <button class="remove-btn" type="submit">Remove</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Cart Item 4 -->
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/a1.png" alt="A 1" />
+                    </div>
+                    <div class="cart-item-name">Cache SATA III Internal Desktop Hard Drive Blue</div>
+                    <div class="cart-item-price">EGP 9.602</div>
+                    <div class="cart-item-quantity">
+                        <div class="quantity-control">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" min="1" value="1">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-remove">
+                        <form class="remove-form" action="remove_item.php" method="post">
+                            <input type="hidden" name="item_id" value="4">
+                            <button class="remove-btn" type="submit">Remove</button>
+                        </form>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-details">
+                    <p>Subtotal: <span>EGP 34.575</span></p>
+                    <p>Tax (5%): <span>EGP 1.728</span></p>
+                    <hr>
+                    <p class="total">Total: <span>EGP 36.303 </span></p>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aman Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact | Aman Store</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using the same fonts as previous pages for consistency -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Cairo:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                <!-- رمز الدائرة الإلكترونية -->
+                <circle cx="200" cy="200" r="140" fill="#6f42c1"/>
+                <path d="M140 200 L180 200 M220 200 L260 200 M200 140 L200 180 M200 220 L200 260" 
+                      stroke="white" stroke-width="16" fill="none"/>
+                <circle cx="200" cy="200" r="100" stroke="white" stroke-width="16" fill="none"/>
+                
+                <!-- اسم المتجر -->
+                <text x="400" y="180" font-family="Arial Black, sans-serif" font-size="120" fill="#6f42c1" font-weight="bold">AMAN</text>
+                <text x="400" y="300" font-family="Arial, sans-serif" font-size="90" fill="#64748b">STORE</text>
+                
+                <!-- خط تحت الكلمة -->
+                <line x1="400" y1="330" x2="800" y2="330" stroke="#6f42c1" stroke-width="12"/>
+            </svg>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="cart.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about_us.html" class="active">About Us</a>
+            <a href="#" class="cart-section">
+                <span class="cart-icon">🛒</span>
+                <span>0 item(s) - EGP0</span>
+              </a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>Registration</h1>
+            <p>Join us and enjoy a seamless shopping experience!</p>
+        </div>
+    </section>
+
+    <main class="content">
+        <section class="form-section">
+            <!-- Replace the image path with the correct relative path or URL -->
+            <img src="images/2.png" alt="Contact Us" class="contact-image">
+
+            <form action="" class="registration-form">
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <label for="username">Username</label>
+                    <input id="username" type="text" placeholder="Enter your username" required>
+
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Write a complex password" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="you@example.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="birthdate">Birth Date</label>
+                    <input id="birthdate" type="date">
+
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" placeholder="e.g. +1 555-555-5555">
+
+                    <div class="gender-group">
+                        <span>Gender:</span>
+                        <label><input type="radio" name="gender" value="male" checked> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+
+                    <label for="country">Choose your country</label>
+                    <select name="country" id="country">
+                        <option value="egypt">Egypt</option>
+                        <option value="algeria">Algeria</option>
+                        <option value="morocco">Morocco</option>
+                        <option value="tunisia">Tunisia</option>
+                    </select>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </section>
+
+        <section class="contact-links">
+            <h2>Get in Touch</h2>
+            <p>Connect with us through your favorite platform.</p>
+            <div class="contact-icons">
+                <a href="https://www.whatsapp.com" target="_blank" class="contact-icon whatsapp">
+                    <img src="images/9.jpg" alt="WhatsApp">
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="contact-icon facebook">
+                    <img src="images/10.png" alt="Facebook">
+                    <span>Facebook</span>
+                </a>
+                <a href="tel:+01157194852" class="contact-icon phone">
+                    <img src="images/11.png" alt="Phone">
+                    <span>Call Us</span>
+                </a>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aman Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
